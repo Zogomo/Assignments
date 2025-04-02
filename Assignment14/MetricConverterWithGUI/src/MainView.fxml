@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="352.0" prefWidth="486.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <ChoiceBox fx:id="unitInBox" layoutX="26.0" layoutY="95.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="unitOutBox" layoutX="300.0" layoutY="95.0" prefWidth="150.0" />
+      <Label layoutX="235.0" layoutY="98.0" text="to">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <TextField fx:id="quanTextField" layoutX="168.0" layoutY="175.0" />
+      <Button layoutX="204.0" layoutY="239.0" mnemonicParsing="false" onAction="#calculateConversion" text="Calculate" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Label fx:id="quantOutLabel" alignment="TOP_CENTER" layoutX="-1.0" layoutY="281.0" prefHeight="70.0" prefWidth="486.0" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="6.0" layoutY="178.0" text="Amount being converted:" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+   </children>
+</AnchorPane>
